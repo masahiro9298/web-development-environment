@@ -17,5 +17,11 @@
   "liveSassCompile.settings.watchOnLaunch": true, //VS Code起動時に監視開始
   "editor.formatOnSave": true, //貼り付けたコードをセーブするときにフォーマットする
   "editor.defaultFormatter": "esbenp.prettier-vscode", //デフォルトのフォーマッターをprettierにする
-  "editor.renderWhitespace": "all" //空白文字をわかりやすく
+  "editor.renderWhitespace": "all", //空白文字をわかりやすく
+  "stylelint.validate": ["css", "scss"], //stylelintの検証を行う対象を指定
+  "css.validate": false, //VSCodeの検証を無効化してstylelintのみ検証を行う
+  "scss.validate": false, //VSCodeの検証を無効化してstylelintのみ検証を行う
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit" //保存時に自動修正可能なstylelintのエラーは全て修正する
+  }
 }
